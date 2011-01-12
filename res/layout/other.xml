@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  
+<ImageView
+	android:src="@drawable/linii" 
+	android:id="@+id/linii" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:paddingLeft="20dip"
+	android:paddingRight="20dip"
+	android:paddingTop="25dip"
+	android:clickable="true"
+	/>
+
+<ImageView
+	android:src="@drawable/raspored"  
+	android:id="@+id/raspored" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/linii"
+	android:layout_centerHorizontal="true"
+	android:padding="20dip"
+	android:clickable="true"
+	/>
+
+</RelativeLayout>
+</ScrollView>

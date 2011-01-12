@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">a Bus Trip MK...</string>
+    <string name="mapa_text">Барај на Мапа</string>
+    <string name="jsp_text">ЈСП Распоред</string>
+    <string name="lista_text">Барај во Листа</string>
+    <string name="main_no_items">No items</string>
+    <string name="osmarender">OsmaRender</string>
+	<string name="mapnik">Mapnik</string>
+	<string name="cyclemap">Cycle Map</string>
+	<string name="unknown">Unknown</string>
+	<string name="map_mode">Начин на приказ...</string>
+	<string name="my_location">Моја Локација</string>
+	<string name="clear_map">Избриши Патека</string>
+	<string name="about">За Мапата...</string>
+	<string name="about_message">Оваа апликација користи мапи обезбедени од OpenStreetMap.org</string>
+	<string name="about_txt_1">Добредојдовте во aBusTripMK, realtime планер за патување и снаоѓање низ јавните градски автобуски линии на град Скопје.</string>
+	<string name="about_txt_2">За полесна навигација низ апликацијата, прочитајте ги следните неколку реда...</string>
+	<string name="about_txt_3">- Пребарувајте низ мапата на Скопје за посакуваната крајна дестинација (постојка), кликнете на маркерот и апликацијата ќе ви ја даде најблиската постојка до Вас и броевите на можни автобуски линии кои што поминуваат таму и кои што ќе Ве однесат до крајната дестинација. Кликнете на копчето menu за локалното помошно мени...</string>
+	<string name="about_txt_4">- Пребарувајте низ листа од сите станици подредени по општини, кликнете на некоја од нив и апликацијата ќе ви ги покаже сите автобуски линии кои што поминуваат таму</string>
+	<string name="about_txt_5">За прашања, поплаки или пофалби, контактирајте не на нашиот официјален Twitter профил.</string>
+	<string name="about_txt_6">Забелешка: Апликацијата бара интернет конекција за вчитување на мапите, исцртување на патека и пристап кон распоредот на возниот ред, како и GPS за пронаоѓање на Вашата моментална локација при користење на барањето низ мапа. Во апликацијата се застапени само дел од градските автобуски линии.</string>
+	<string name="about_txt_7">- Изберете го јазичето "Останато..." за детално да ги прегледате вклучените линии, како и за пристап до возниот ред на веб порталот на ЈСП Скопје</string>
+	    
+</resources>
