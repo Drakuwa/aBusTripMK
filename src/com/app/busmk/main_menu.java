@@ -33,7 +33,7 @@ public class main_menu extends Activity {
 			// Welcome note...
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder.setMessage(
-					"Добредојдовте во aBusTripMK2, "
+					"Добредојдовте во aBusTripMK, "
 							+ "за повеќе информации и начин на користење, "
 							+ "погледнете во 'За Апликацијата' делот ").setIcon(
 					R.drawable.icon).setTitle(R.string.app_name).setCancelable(
