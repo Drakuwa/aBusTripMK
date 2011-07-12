@@ -26,7 +26,7 @@ public class main_menu extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_menu);
 
-		boolean exists = (new File("/data/data/com.app.busmk2/notwelcomefirst"))
+		boolean exists = (new File("/data/data/com.app.busmk/notwelcomefirst"))
 				.exists();
 
 		if (!exists) {
@@ -45,7 +45,7 @@ public class main_menu extends Activity {
 			AlertDialog alert = builder.create();
 			alert.show();
 			try {
-				new File("/data/data/com.app.busmk2/notwelcomefirst")
+				new File("/data/data/com.app.busmk/notwelcomefirst")
 						.createNewFile();
 			} catch (IOException e) {
 				e.printStackTrace();

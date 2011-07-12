@@ -7,6 +7,7 @@
 package com.app.busmk;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
@@ -41,6 +42,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle; //import android.util.Log;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -69,6 +71,19 @@ public class baraj_mapa extends Activity implements OpenStreetMapConstants {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+		boolean exists = (new File("/data/data/com.app.busmk/notfirst"))
+				.exists();
+		if (!exists) {
+			mOsmv.getController().setZoom(15);
+			mOsmv.scrollTo(41995912, 21431454);
+			try {
+				new File("/data/data/com.app.busmk/notfirst").createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			Log.d("xxxx", "First RUN!!! :D");
+		}
 
 		DataBaseHelper myDb = new DataBaseHelper(null);
 		myDb = new DataBaseHelper(this);
@@ -597,8 +612,8 @@ public class baraj_mapa extends Activity implements OpenStreetMapConstants {
 									}
 
 									if (min == rastojanie) {// najdena e linija
-															// shto pominuva na
-															// ista stanica
+										// shto pominuva na
+										// ista stanica
 										b = true;
 										// Log.d("xxx",
 										// " VNATRE VO B rastojanie: "
