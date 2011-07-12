@@ -1,14 +1,8 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /root/Documents/workspace/aBusTripMK/src/org/andnav/osm/services/IOpenStreetMapTileProviderService.aidl
+ * Original file: /home/drakuwa/Documents/android/workspace/aBusTripMK/src/org/andnav/osm/services/IOpenStreetMapTileProviderService.aidl
  */
 package org.andnav.osm.services;
-import java.lang.String;
-import android.os.RemoteException;
-import android.os.IBinder;
-import android.os.IInterface;
-import android.os.Binder;
-import android.os.Parcel;
 public interface IOpenStreetMapTileProviderService extends android.os.IInterface
 {
 /** Local-side IPC implementation stub class. */
@@ -21,7 +15,7 @@ public Stub()
 this.attachInterface(this, DESCRIPTOR);
 }
 /**
- * Cast an IBinder object into an IOpenStreetMapTileProviderService interface,
+ * Cast an IBinder object into an org.andnav.osm.services.IOpenStreetMapTileProviderService interface,
  * generating a proxy if needed.
  */
 public static org.andnav.osm.services.IOpenStreetMapTileProviderService asInterface(android.os.IBinder obj)
@@ -112,7 +106,7 @@ _data.recycle();
 }
 }
 }
-static final int TRANSACTION_requestMapTile = (IBinder.FIRST_CALL_TRANSACTION + 0);
+static final int TRANSACTION_requestMapTile = (android.os.IBinder.FIRST_CALL_TRANSACTION + 0);
 }
 /**
 * Initiate a request for a map tile.

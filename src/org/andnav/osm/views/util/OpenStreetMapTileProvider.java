@@ -73,7 +73,6 @@ public class OpenStreetMapTileProvider implements ServiceConnection, OpenStreetM
                 Log.d(DEBUGTAG, "connected");
         };
         
-        @Override
         public void onServiceDisconnected(final ComponentName name) {
                 mTileService = null;
                 Log.d(DEBUGTAG, "disconnected");
@@ -122,7 +121,6 @@ public class OpenStreetMapTileProvider implements ServiceConnection, OpenStreetM
         
         IOpenStreetMapTileProviderCallback mServiceCallback = new IOpenStreetMapTileProviderCallback.Stub() {
 
-                @Override
                 public void mapTileRequestCompleted(int rendererID, int zoomLevel, int tileX, int tileY, String aTilePath) throws RemoteException {
                         final OpenStreetMapTile tile = new OpenStreetMapTile(rendererID, zoomLevel, tileX, tileY);
                         if (aTilePath != null) {

@@ -80,7 +80,7 @@ public class OpenStreetMapTileProviderService extends Service implements OpenStr
          * The IRemoteInterface is defined through IDL
          */
         private final IOpenStreetMapTileProviderService.Stub mBinder = new IOpenStreetMapTileProviderService.Stub() {
-                @Override
+                
                 public void requestMapTile(int rendererID, int zoomLevel, int tileX,
                                 int tileY, IOpenStreetMapTileProviderCallback callback)
                                 throws RemoteException {
